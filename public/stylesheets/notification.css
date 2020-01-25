@@ -1,0 +1,63 @@
+
+  
+  /* -----------------------------------------
+     Dropdown
+  ----------------------------------------- */
+ul.dropdown-menu{
+    padding:15px;
+    white-space: nowrap;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+
+.dropdown-menu > li a {
+    padding: 5px 0px;
+    white-space: normal;
+
+}
+
+
+#dropDownMenu1 {
+float: left
+}
+
+#dropDownViewAll {
+    list-style-type: none;
+    background-color: light-grey;
+}
+
+  /* -----------------------------------------
+     Badge
+  ----------------------------------------- */
+  
+  .badge.badge-info{
+      padding: 3px 5px 2px;
+      position: absolute;
+      top: 8px;
+      right: 5px;
+      display: inline-block;
+      min-width: 10px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #ffffff;
+      line-height: 1;
+      vertical-align: baseline;
+      white-space: nowrap;
+      text-align: center;
+      border-radius: 10px;
+  }
+  .badge-danger {
+      background-color: #db5565;
+  }
+
+
+.fa.fa-bell-o {
+    font-size: 20px; 
+    float: left; 
+    color: grey;
+}
+
+.badge-info{
+    background-color: #007bff;;
+}

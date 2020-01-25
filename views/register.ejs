@@ -1,0 +1,46 @@
+<%- include('./partials/header') %>
+
+<div class="row">
+  <div class="col-md-12">
+    <h1 style="text-align: center">Sign Up</h1>
+  </div>
+  <div style="width: 50%; margin: 25px auto;">
+    <form action="/register" method="POST">
+      <div class="form-group">
+        <label for="username">User Name</label>
+        <input class="form-control" type="text" name="username" placeholder="john.doe">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input class="form-control" type="password" name="password"
+          placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
+      </div>
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input class="form-control" type="text" name="firstName" placeholder="John">
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input class="form-control" type="text" name="lastName" placeholder="Doe">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input class="form-control" type="email" name="email" placeholder="john.doe@gmail.com">
+      </div>
+      <div class="form-group">
+        <label for="avatar">Avatar Link</label>
+        <input class="form-control" type="text" name="avatar" placeholder="http://example-of-avatar.com">
+      </div>
+      <div class="form-group">
+        <label for="adminCode">Admin code</label>
+        <input class="form-control" type="text" name="adminCode" placeholder="">
+      </div>
+      <div class="form-group">
+        <button class="btn btn-lg btn-primary btn-block">Sign Up!</button>
+      </div>
+    </form>
+    <a href="/campgrounds">Go back!</a>
+  </div>
+</div>
+
+<%- include('./partials/footer') %>

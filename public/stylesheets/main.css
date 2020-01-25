@@ -1,0 +1,75 @@
+label {
+  font-size: 125%;
+  font-weight: 600;
+}
+
+#price-input {
+  width: 40%;
+  margin: 0 5px 0 10px;
+}
+
+.form-inline > * {
+  margin: 0 3px;
+}
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+/* Thumbnail styles */
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+/* Google Map styles */
+#map {
+	height: 400px;
+	width: 100%;
+}
+
+/* Campground show page delete button */
+.delete-form {
+	display: inline-block;
+}
+
+.checked {
+  color: orange;
+}
+
+#main-container {
+  margin-top: 50px;
+}
+
+#flash-messages {
+  margin-top: 80px;
+}
+

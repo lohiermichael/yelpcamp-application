@@ -1,0 +1,52 @@
+<%- include('../partials/header') %>
+
+<!-- Jumbotron -->
+<header class="jumbotron">
+  <div class="container text-center mb-5">
+    <h1>This is the campgrounds page</h1>
+    <p>View hand-picked campgrounds from all over the World</p>
+    <a class="btn btn-primary btn-large" href="/campgrounds/new">Add a new campground</a>
+  </div>
+  <form action="/campgrounds" method="GET" class="form-inline">
+    <div class="form-group">
+      <input type="text" name="search" placeholder="Campground Search..." class="form-control mr-1">
+      <input type="submit" value="Search" class="btn btn-secondary">
+    </div>
+  </form>
+</header>
+
+
+<div class="row text-center">
+  <% if (noMatch) { %>
+  <div class="col-md-12">
+    <h3>No campgrounds match that query, please try again!</h3>
+  </div>
+  <% } %>
+  <% campgrounds.forEach((campground) => { %>
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+    <div class="card"">
+      <img class=" card-img-top" src="<%= campground.image %>" alt="<%= campground.name %>">
+      <div class="card-body">
+        <div class="caption">
+          <h5 class="card-title"><%= campground.name %></h5>
+          <% if (campground.rating === 0) { %>
+          <em>No reviews yet.</em>
+          <% } else { %>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star <% if (campground.rating > 1.5) { %> checked <% } %>"></span>
+          <span class="fa fa-star <% if (campground.rating > 2.5) { %> checked <% } %>"></span>
+          <span class="fa fa-star <% if (campground.rating > 3.5) { %> checked <% } %>"></span>
+          <span class="fa fa-star <% if (campground.rating > 4.5) { %> checked <% } %>"></span>
+          <% } %>
+          <div>
+            <span class="badge label-primary"><i class="fa fa-thumbs-up"></i> <%= campground.likes.length %></span>
+          </div>
+          <hr>
+          <a href="/campgrounds/<%= campground.slug %> " class="btn btn-primary">More info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% }); %>
+</div>
+<%- include('../partials/footer') %>
