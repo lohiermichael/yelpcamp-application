@@ -19,9 +19,8 @@ const commentRoutes = require('./routes/comments'),
   reviewRoutes = require("./routes/reviews");
 
 // Connect to the database
-const dbName = 'yelp_camp_v12';
 mongoose.connect(
-  `mongodb://localhost/${dbName}`,
+  process.env.DATABASEURL || 'mongodb://localhost/yelp_camp_backup',
   {
     useUnifiedTopology: true,
     useNewUrlParser: true,
@@ -30,7 +29,7 @@ mongoose.connect(
   },
   err => {
     if (err) console.error(err);
-    else console.log(`Connected to the mongodb on database ${dbName}`);
+    else console.log('Connected to the mongodb');
   }
 );
 
