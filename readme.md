@@ -1,3 +1,12 @@
+# Yelcamp application
+
+# Introduction
+
+This is the deployed version of the final project of the [Web Development Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) that I took. The code section by section can be found in this [repository](https://github.com/lohiermichael/web-developement-bootcamp).
+
+The application has been deployed on [Heroku](https://stark-scrubland-40735.herokuapp.com/).
+
+
 # 1. YelpCamp initial routes
 
 - Add Landing Page
