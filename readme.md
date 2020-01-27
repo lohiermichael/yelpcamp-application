@@ -129,7 +129,7 @@ There are 7 kinds of RESTFUL routes but we are going to cover only 4 of them her
 8. Add a new button to the show page
 9. Add a description input in the form
 
-## 8. Refactor Mongoose Code
+# 8. Refactor Mongoose Code
 
 - Create a models directory
 - Use module.exports
