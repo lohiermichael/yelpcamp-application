@@ -88,7 +88,7 @@ router.post("/", middleware.isLoggedIn, upload.single('image'), async (req, res)
   }
 })
 
-// NEW route - display from to create new campground
+// NEW route - display form to create new campground
 router.get('/new', middleware.isLoggedIn, (req, res) => {
   res.render('campgrounds/new');
 });
